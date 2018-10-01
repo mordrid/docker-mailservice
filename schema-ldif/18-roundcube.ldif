@@ -1,0 +1,71 @@
+# AUTO-GENERATED FILE - DO NOT EDIT!! Use ldapmodify.
+# CRC32 75a65222
+dn: cn=roundcube
+objectClass: olcSchemaConfig
+cn: roundcube
+olcObjectIdentifier: {0}RoundcubeRoot 1.3.6.1.4.1.42766.4.2
+olcObjectIdentifier: {1}Roundcube RoundcubeRoot:1
+olcObjectIdentifier: {2}RoundcubeAttributeType Roundcube:2
+olcObjectIdentifier: {3}RoundcubeObjectClass Roundcube:3
+olcAttributeTypes: {0}( RoundcubeAttributeType:110 NAME 'rcNickname' DESC 'N
+ ickname' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1
+ .3.6.1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {1}( RoundcubeAttributeType:120 NAME 'rcBirthday' DESC 'B
+ irthday' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1
+ .3.6.1.4.1.1466.115.121.1.15{16} SINGLE-VALUE )
+olcAttributeTypes: {2}( RoundcubeAttributeType:130 NAME 'rcGender' DESC 'Gen
+ der' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6
+ .1.4.1.1466.115.121.1.15{16} SINGLE-VALUE )
+olcAttributeTypes: {3}( RoundcubeAttributeType:210 NAME 'rcHomeMail' DESC 'H
+ omemail' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1
+ .3.6.1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {4}( RoundcubeAttributeType:220 NAME 'rcWorkMail' DESC 'W
+ orkmail' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1
+ .3.6.1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {5}( RoundcubeAttributeType:310 NAME 'rcHomeFax' DESC 'Ho
+ mefax' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3
+ .6.1.4.1.1466.115.121.1.15{64} )
+olcAttributeTypes: {6}( RoundcubeAttributeType:320 NAME 'rcWorkFax' DESC 'Wo
+ rkfax' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3
+ .6.1.4.1.1466.115.121.1.15{64} )
+olcAttributeTypes: {7}( RoundcubeAttributeType:410 NAME 'rcHomeURL' DESC 'We
+ bsite Private' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SY
+ NTAX 1.3.6.1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {8}( RoundcubeAttributeType:420 NAME 'rcWorkURL' DESC 'We
+ bsite Work' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTA
+ X 1.3.6.1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {9}( RoundcubeAttributeType:430 NAME 'rcBlogURL' DESC 'We
+ blog' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.
+ 6.1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {10}( RoundcubeAttributeType:440 NAME 'rcProfileURL' DESC
+  'Profile' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX
+  1.3.6.1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {11}( RoundcubeAttributeType:510 NAME 'rcSkype' DESC 'Sky
+ pe' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.
+ 1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {12}( RoundcubeAttributeType:520 NAME 'rcJabber' DESC 'Ja
+ bber' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.
+ 6.1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {13}( RoundcubeAttributeType:530 NAME 'rcAIM' DESC 'AIM' 
+ EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.
+ 1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {14}( RoundcubeAttributeType:540 NAME 'rcICQ' DESC 'ICQ' 
+ EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.
+ 1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {15}( RoundcubeAttributeType:610 NAME 'rcRegion' DESC 'Re
+ gion' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.
+ 6.1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {16}( RoundcubeAttributeType:620 NAME 'rcCountry' DESC 'C
+ ountry' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.
+ 3.6.1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {17}( RoundcubeAttributeType:710 NAME 'rcManager' DESC 'M
+ anager' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.
+ 3.6.1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcAttributeTypes: {18}( RoundcubeAttributeType:720 NAME 'rcAssistant' DESC 
+ 'Assistant' EQUALITY caseIgnoreMatch SUBSTR caseIgnoreSubstringsMatch SYNTA
+ X 1.3.6.1.4.1.1466.115.121.1.15{64} SINGLE-VALUE )
+olcObjectClasses: {0}( RoundcubeObjectClass:1 NAME 'RoundcubeMail' AUXILIARY
+  MAY ( rcNickname $ rcBirthday $ rcGender $ rcHomeMail $ rcWorkMail $ rcHom
+ eFax $ rcWorkFax $ rcHomeURL $ rcWorkURL $ rcBlogURL $ rcProfileURL $ rcSky
+ pe $ rcJabber $ rcAIM $ rcICQ $ rcRegion $ rcCountry $ rcManager $ rcAssist
+ ant ) )
