@@ -1,0 +1,3 @@
+[submodule "ldap-mail-schema"]
+	path = ldap-mail-schema
+	url = git@github.com:variablenix/ldap-mail-schema.git
