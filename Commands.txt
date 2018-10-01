@@ -1,0 +1,4 @@
+# LDAP Volumes
+
+docker volume create slapd-database
+docker volume create slapd-config 
